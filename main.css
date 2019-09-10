@@ -1,0 +1,234 @@
+/* Page Font */ 
+html, body {
+	font-family: "Lato", serif;
+}
+
+
+/* Banner */
+.banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #333;
+	width: 100%;
+	box-shadow: 0px 3px 5px #888888;
+
+}
+#page ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ }
+
+#page li {
+  float: left;
+}
+
+
+#page li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+#page li a:hover, .dropdown:hover .dropbtn {
+  background-color: #111;
+}
+
+#pageli.dropdown {
+  display: inline-block;
+}
+
+#page .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#page .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#page .dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+#page .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#active {
+  background-color: #B48291;
+}
+
+/* Title */
+.heading {
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 60px;
+}
+
+#titleT{
+	text-align: center;
+}
+
+.heading #title {
+  margin-top: 1em;
+  text-align: center;
+  color: #B48291;
+}
+
+p .caption {
+  text-align: center;
+  color: #382F32;
+}
+
+#caption{
+  font-size: 20px;
+}
+
+.tabbed {
+  margin-left: 70em;
+}
+.tutorial h1{
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 40px;
+}
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    margin-left: 0.5em;
+    display: inline-block;
+    padding: 3px;
+}
+p{
+	color:#252627;
+  text-indent: 25px;
+}
+
+.subTutorial {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.subTutorial h2 {
+  margin-top: 1em;
+  margin-bottom: -0.3em;
+}
+
+.subTutorial hr {
+  margin-bottom: -0.7em;
+}
+
+.images {
+  text-align: center;
+}
+
+.images img {
+  display: inline-block;
+}
+
+#subTutorial p { 
+  color: #22223B;
+}
+
+.tutorial li { 
+  color: #9A8C98;
+}
+
+.definition { 
+  color: #4A4E69;
+}
+/*button*/ 
+
+.button{
+	border: none;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+	width: 30%;
+}
+
+.button:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #B48291;
+}
+
+.button {
+  background-color: #B48291;
+  color: white;
+}
+
+
+.buttonarr{
+  border: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.buttonarr: hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #B48291;
+}
+
+.buttonarr {
+  background-color: #B48291;
+  color: white;
+}
+
+#optButtons{
+  display: inline-block;
+}
+
+
+.submitbutton {
+  background-color: #B48291; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  padding: 10px 24px;
+}
+.question{
+  font-size: 25px;
+}
+
+.slideshow {
+  text-align: center;
+ 
+}

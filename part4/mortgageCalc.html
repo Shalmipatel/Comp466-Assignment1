@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Mortgage Converter</title>
+      <link rel="stylesheet" type="text/css" href="../main.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:900">
+      <script src="mortgageCalc.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div id="page" class="banner">
+         <ul>
+            <li><a href="../tma1.html" >Assingment</a></li>
+            <li><a href="../part1/resume.xml" >Part 1</a></li>
+            <li class="dropdown">
+               <a href="../part2/index.html" class="dropbtn">Part 2</a>
+               <div class="dropdown-content">
+                  <a href="../part2/unit1.html">Unit 1</a>
+                  <a href="../part2/unit2.html">Unit 2</a>
+                  <a href="../part2/unit3.html">Unit 3</a>
+               </div>
+            </li>
+            <li><a href="../part3/index.html">Part 3</a></li>
+            <li class="dropdown">
+               <a href="index.html" class="dropbtn"  id = "active">Part 4</a>
+               <div class="dropdown-content">
+                  <a href="measurementConverter.html">Measurement Converter</a>
+                  <a href="mortgageCalc.html">Mortgage Calculator</a>
+                  <a href="tempCalc.html">Temperature Calculator</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div class="centerthis">
+         <div class="heading">
+            <h1 id ="title"> Mortgage Converter </h1>
+            <p class= "caption"> Type in any box to use the tool. </p>
+            <hr width="60%">
+         </div>
+         <div class="heading">
+            <div >
+               <label>Mortgage Amount:</label>
+               <input type="number" id="mAmount" placeholder="Mortgage Amount">
+            </div>
+            <br>
+            <div >
+               <label>Interest Rate %:</label>
+               <input type="number" id="rate" placeholder="Percentage" >
+            </div>
+            <br>
+            <div >
+               <label>Amortization (yrs):</label>
+               <input type="number" id="years" placeholder="Years">
+            </div>
+            <br>
+            <div >
+               Frequency of Payment:
+               <select class="submitbutton" id="payFreq">
+                  <option value="week">Weekly</option>
+                  <option value="bi">Bi-Weekly</option>
+                  <option value="month">Monthly</option>
+               </select>
+			   <br><br>
+            </div>
+            <div>
+               <a onclick="mortgage()" class="submitbutton"> submit </a>
+            </div>
+            <hr width="30%">
+            <div>
+               <p>Payment Amount: <em id="payment"></em></p>
+            </div>
+         </div>
+      </div>

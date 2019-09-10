@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Tutorial: Unit 1 </title>
+      <link rel="stylesheet" type="text/css" href="../main.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:900">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div id="page" class="banner">
+         <ul>
+            <li><a href="../tma1.html" >Assingment</a></li>
+            <li><a href="../part1/resume.xml" >Part 1</a></li>
+            <li class="dropdown">
+               <a href="index.html" class="dropbtn" id = "active">Part 2</a>
+               <div class="dropdown-content">
+                  <a href="unit1.html">Unit 1</a>
+                  <a href="unit2.html">Unit 2</a>
+                  <a href="unit3.html">Unit 3</a>
+               </div>
+            </li>
+            <li><a href="../part3/index.html">Part 3</a></li>
+            <li class="dropdown">
+               <a href="../part4/index.html" class="dropbtn">Part 4</a>
+               <div class="dropdown-content">
+                  <a href="../part4/measurementConverter.html">Measurement Converter</a>
+                  <a href="../part4/mortgageCalc.html">Mortgage Calculator</a>
+                  <a href="../part4/tempCalc.html">Temperature Calculator</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div>
+      <div class="heading">
+         <h1 id ="title"> Unit 1: HTML5 & CSS3 </h1>
+         <p class= "caption"> In this unit you will learn about HTML5 and CSS3. The Following information/data is for unit 1 from Athabasca University COMP 466 and Internet and World Wide Web How To Program, 5th Edition (Deitel, Harvey, Abbey Deitel). </p>
+         <p class= "caption"> Read over the tutorial and try the quiz </p>
+         <a href="quiz1.html" class="submitbutton"> Quiz </a>
+		 <hr width="60%">
+      </div>
+      <div id = "tutorial">
+         <div class = "tutorial">
+            <h1> Web </h1>
+            <hr>
+            <div class= "subTutorial">
+               <h2> Introduction </h2>
+               <p> A web server responds to client requests by providing resources such as HTML documents.</p>
+            </div>
+            <div class="subTutorial">
+               <h2> HTTP </h2>
+               <p><a class="definition"> URI: </a> (Uniform Resource Identifiers) identify resources on the internet. </p>
+               <p> <a  class="definition"> URL:</a> Starts with "http://" and refers to files, directories or server-side code that performs tasks, such as database lookups, Internet searches and business-application processing. </p>
+               <p> How do http transactions work? </p>
+               <ol type="a">
+                  <li>The request is send from the web client to the web server</li>
+                  <li>After it recives the request, the web server seraches its system for the resources</li>
+                  <li>the server responds to the request with resource's content</li>
+               </ol>
+               <p> Two most common HTTP request types are: </p>
+               <ul>
+                  <li> Get</li>
+                  <li> Post </li>
+               </ul>
+            </div>
+         </div>
+         <div class="tutorial">
+            <h1 class = "title"> HTML5 </h1>
+            <hr>
+            <div class ="subTutorial">
+               <h2> Basics </h2>
+               <p> In the following you will learn the basics of HTML5. </p>
+               <p> The following are commonnly uses tags in HTML: </p>
+               <ul>
+                  <li><a class="definition"> html: </a> Document type, which determines the type of document</li>
+                  <li><a class="definition"> head: </a> This tag is the head tag where, contents the information fo the file such as encodings,title,style CSS, etc.</li>
+                  <li><a class="definition"> title: </a>This tag is where you can name the HTML file</li>
+                  <li><a class="definition"> body: </a> This tag is where all the content of the file resides. </li>
+                  <li><a class="definition"> p: </a> This defines where the paragraphs are in the body</li>
+               </ul>
+               <p> *add &lt; and &gt; around the tags.
+               <h2> Headings </h2>
+               <p> In HTML5 there is an option of selecting h1 - h6, where h1 is the largest font size and where h6 is the smallest size. </p>
+               <p>Here is an exmaple of the headings in the HTML:</p>
+               <div class="images">
+                  <img src="pictures/headings.jpg">
+                  <img src="pictures/headinghtml.jpg">
+               </div>
+               <h2> Links </h2>
+               <p> You can add links to you html page as such &gt;a href= "http://...""&gt;&gt;/a&gt;</p>
+               <a class="example"> <a href="http://google.ca">Take me to google</a> </a>
+               <h2> Images </h2>
+               <p> You can also add pictures, the most common image types are .png and .jpg with the following tag &lt;img src="imagePath"&gt; </p>
+               <a class= "sidenote"> Images do not need a end tag </a>
+               <h2> Special Characters </h2>
+               <p> There are special referenes to symbols in HTML, which are the following: </p>
+               <div class="images">
+                  <img src="pictures/symbols.jpg">
+               </div>
+               <h2> Lists </h2>
+               <p> There are many types of lists you can work with in HTML: </p>
+               <ul>
+                  <li> Unordered </li>
+                  <ul>
+                     <li>A list with no particular order (bullet points)</li>
+                  </ul>
+                  <li> Ordered </li>
+                  <ul>
+                     <li>A list that is ordered, starting with 1,a,roman numbers, etc</li>
+                  </ul>
+                  <li> Nested Lits </li>
+                  <ul>
+                     <li>A List with a list </li>
+                  </ul>
+               </ul>
+               <h2> Tables </h2>
+               <p> Tables data is organized into rows and columns and here an example to create a table in HTML5 </p>
+               <div class="images">
+                  <img src="pictures/table.jpg">
+               </div>
+            </div>
+            <div class="tutorial">
+               <h1 class = "title"> CSS3 </h1>
+               <hr>
+               <h2> Introduction </h2>
+               <p> CSS(Cascading Style Sheets) this will help you create a fun and appealing HTML page. To add the style page to you html you can add this lin into the head element , &lt;link rel="stylesheet" type="text/css" href="filePath.css"&gt;.</p>
+               <h3> Attributes</h3>
+               <li><a class="definition"> Tags </a>Can be written has "h2{}"</li>
+               <li><a class="definition"> Classes </a>Can be written as ".myClass{}"</li>
+               <li><a class="definition"> IDs</a>Can be written as "#UniqueTitle{}" </li>
+               <p> With CSS you can design your HTML code, to the way you want it to look.</p>
+            </div>
+         </div>
+         <hr>
+         <div class="heading">
+            <p class= "caption">This is the end of the tutorial, now try the quiz.</p>
+            <a href="quiz3.html" class="submitbutton"> Quiz </a>
+         </div>
+         
+      </div>

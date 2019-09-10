@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Assignment Introduction </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:900">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body> 
+	<div id="page" class="banner">
+		<ul>
+		  <li><a href="tma1.html"  id = "active" >Assingment</a></li>
+		  <li><a href="part1/resume.xml" >Part 1</a></li>
+		  <li class="dropdown">
+			<a href="part2/index.html" class="dropbtn">Part 2</a>
+			<div class="dropdown-content">
+			  <a href="part2/unit1.html">Unit 1</a>
+			  <a href="part2/unit2.html">Unit 2</a>
+			  <a href="part2/unit3.html">Unit 3</a>
+			</div>
+		  </li>
+		  <li><a href="part3/index.html">Part 3</a></li>
+		  <li class="dropdown">
+			<a href="part4/index.html" class="dropbtn">Part 4</a>
+			<div class="dropdown-content">
+			  <a href="part4/measurementConverter.html">Measurement Converter</a>
+			  <a href="part4/mortgageCalc.html">Mortgage Calculator</a>
+			  <a href="part4/tempCalc.html">Temperature Calculator</a>
+			</div>
+		  </li>
+		</ul>
+	</div>
+	
+	<div class="heading">
+		<h1 id ="title"> Assignment 1 </h1>
+		<p id= "caption"> COMP 466 - Advanced Technologies for Web-Based Systems - Assignment 1 </p> 
+		<p> Please read over the documentation and proceed with the web application </p>
+		<p class="caption" style='display:inline'> Shalmi Patel - Student # || </p>
+	
+		<hr width="60%">
+		<br>
+
+
+	</div>
+
+	<div class="tutorial">
+		<h1 class="title"> Documentation </h1>
+		<div class="subTutorial">
+			<h2> Description and requirments of the project </h2><br>
+			<a href="assignment_1.pdf" class="submitbutton"> Click here to open the assingment one requirements</a>
+
+			<h2> Interpretation of the Assignment </h2>
+			<ul>
+				<li><a class="definition"> Part 1: </a> Create a Resume using xml, xsd and stlye the resume with xsl.</li>
+				<li><a class="definition"> Part 2: </a> Create Tutorials of the 3 units that are associated with this assingment and create quizes based on each tutorial.</li>
+				<li><a class="definition"> Part 3: </a> Create a Slideshow using Canvas and JSON.</li>
+				<li><a class="definition"> Part 4: </a> Create 3 Utility tools. </li>
+			</ul>
+
+			<h2> Analysis and Design of the application </h2>
+			<ul>
+				<li><a class="definition"> Part 1: Converted my resume into XML form with the supporting files.</a> </li>
+				<li><a class="definition"> Part 2: Created 3 tutorials based on each unit, i created the tutorial first then created a 5 question quiz after it, based on the content.	</a> </li>
+				<li><a class="definition"> Part 3: I created a 20 photo sideshow using javascript and canvas. I created a play/stop button, shuffle/Sequiential button and a transistion.</a> </li>
+				<li><a class="definition"> Part 4: I created a on-load utility page, for measurement converestion, mortage calculator and temperature converter</a> 
+					<ul>
+						<li> I think a temperature converter would be helpful because of the different temperatures we read on the news, or even while cooking, etc.</li>
+					</ul>
+				</li>
+			</ul>
+
+				
+			<h2> How to run each page </h2> 
+			<p> I recommend viewing the application in Chrome, EXPECT for part 1, please view that page on internet explorer</p>
+			<p> please make sure to accept the pop-up messages </p>
+			<ul>
+				<li><a class="definition"> Part 1: </a> This part was tested and will run on ONLY internet explorer.</li>
+				<li><a class="definition"> Part 2: </a> This part was tested and will run on chrome, and internet explorer. </li>
+				<li><a class="definition"> Part 3: </a> This part was tested and will run on chrome, and internet explorer. </li>
+				<li><a class="definition"> Part 4: </a> This part was tested and will run on chrome, and internet explorer.  </li>
+			</ul>
+			
+			<h2> Sources </h2>
+			<p> https://www.w3schools.com/ -- was used overall to learn and fix code.
+			<ul>
+				<li><a class="definition"> Part 2: </a> 
+					<ul>
+						<li>Used the course powerpoints/textbook.</li>
+					</ul>
+				</li>
+				<li><a class="definition"> Part 4: </a> To get the formulas of the converters I used the following websites
+					<ul>
+						<li> https://www.wikihow.com/Calculate-Mortgage-Payments </li>
+						<li>https://www.thoughtco.com/temperature-conversion-formulas-609324 </li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="heading">
+		<hr>
+		<form action="part1/resume.xml" style='display:inline'>
+			<button class="button">Part 1: Resume</button>
+		</form>
+		<form action="part2/index.html" style='display:inline'>
+			<button class="button">Part 2: Tutorials</button>
+		</form>
+		<br>
+		<form action="part3/index.html" style='display:inline'>
+			<button class="button">Part 3: SlideShow</button>
+		</form>
+		<form action="part4/index.html" style='display:inline'> 
+			<button class="button">Part 4: Utility Tools</button>
+		</form>
+	</div>
+
+</body>
+</html>

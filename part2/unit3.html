@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Tutorial: Unit 3 </title>
+      <link rel="stylesheet" type="text/css" href="../main.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:900">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div id="page" class="banner">
+         <ul>
+            <li><a href="../tma1.html" >Assingment</a></li>
+            <li><a href="../part1/resume.xml" >Part 1</a></li>
+            <li class="dropdown">
+               <a href="index.html" class="dropbtn" id = "active">Part 2</a>
+               <div class="dropdown-content">
+                  <a href="unit1.html">Unit 1</a>
+                  <a href="unit2.html">Unit 2</a>
+                  <a href="unit3.html">Unit 3</a>
+               </div>
+            </li>
+            <li><a href="../part3/index.html">Part 3</a></li>
+            <li class="dropdown">
+               <a href="../part4/index.html" class="dropbtn">Part 4</a>
+               <div class="dropdown-content">
+                  <a href="../part4/measurementConverter.html">Measurement Converter</a>
+                  <a href="../part4/mortgageCalc.html">Mortgage Calculator</a>
+                  <a href="../part4/tempCalc.html">Temperature Calculator</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div class="centerthis">
+      <div class="heading">
+         <h1 id ="title"> Unit 3: XML & Ajax </h1>
+         <p class= "caption"> In this unit you will review the basics of XML and Ajax </p>
+         <p class= "caption"> Read over the tutorial and try the quiz. </p>
+         <a href="quiz3.html" class="submitbutton"> Quiz </a>
+         <hr width="60%">
+      </div>
+      <div id = "tutorial">
+         <div class = "tutorial">
+            <h1 class="title"> XML </h1>
+            <hr>
+            <div class= "subTutorial">
+               <h2> Introduction</h2>
+               <p> XML permits document authors to create markup for virtually any type of information </p>
+               <p>An XML parser is responsible for identifying components of XML documents (typically files with the .xml extension) and then storing those components in a data structure for manipulation </p>
+               <p> Example:</p>
+               <div class="images">
+                  <img src="pictures/xml.jpg">
+               </div>
+               <h2> Structuring Data </h2>
+               <p>	An XML document begins with an optional XML declaration, which identifies the document as an XML document. The version attribute specifies the version of XML syntax used in the document. </p>
+               <p> XML comments begin with &lt;!-- and end with --&gt; </p>
+               <h2> DTD - Documnet Type Definitions </h2>
+               <p> DTDs and schemas specify documents’ element types and attributes, and their relationships to one another </p>
+               <p>DTDs and schemas enable an XML parser to verify whether an XML document is valid (i.e., its elements contain the proper attributes and appear in the proper sequence)</p>
+               <p>In a DTD, an ELEMENT element type declaration defines the rules for an element. An ATTLIST attribute-list declaration defines attributes for a particular element</p>
+               <p> Example: </p>
+               <div class="images">
+                  <img src="pictures/dtd.jpg">
+               </div>
+               <h2>XSL transformation </h2>
+               <p>Convert XML into any text-based document </p>
+               <p> XSL documents have the extension .xsl </p>
+               <p><a  class="definition"> XPath </a>A string-based language of expressions used by XML and many of its related technologies for effectively and efficiently locating structures and data (such as specific elements and attributes) in XML documents </p>
+               <p>XSLT does not analyze every node of the source tree, it selectively navigates the source tree using XPath’s select and match attributes </p>
+               <p>Stylesheeet Language:</p>
+               <ul>
+                  <li><a class="definition"> XPath character / (a forward slash)  </a> Selects the document root </li>
+                  <li><a class="definition"> XSL element value-of  </a> Retrieves an attribute’s value</li>
+                  <li><a class="definition"> XSL node-set function name  </a>Retrieves the current node’s element name</li>
+                  <li><a class="definition"> XSL node-set function text </a>  Retrieves the text between an element’s start and end tags. </li>
+                  <li><a class="definition">The XPath expression //*  </a> Selects all the nodes in an XML document </li>
+               </ul>
+               <h2> Document Object Model </h2>
+               <p>Retrieving data from an XML document using traditional sequential file processing techniques is neither practical nor efficient</p>
+               <p>Some XML parsers store document data as tree structures in memory </p>
+               <ul>
+                  <li>This hierarchical tree structure is called a Document Object Model (DOM) tree, and an XML parser that creates this type of structure is known as a DOM parser </li>
+                  <li>Each element name is represented by a node </li>
+                  <li>A node that contains other nodes is called a parent node</li>
+                  <li>A parent node can have many children, but a child node can have only one parent node </li>
+                  <li>Nodes that are peers are called sibling nodes </li>
+               </ul>
+            </div>
+            <h1> Ajax </h1>
+            <div class= "subTutorial">
+               <h2> Intoduction </h2>
+               <p>Ajax applications separate client-side user interaction and server communication, and run them in parallel, making the delays of server-side processing more transparent to the user </p>
+               <p>“Raw” Ajax uses JavaScript to send asynchronous requests to the server, then updates the page using the DOM </p>
+               <h2> Tranditional Web Applications </h2>
+               <p>Traditional web applications </p>
+               <ul>
+                  <li>User fills in the form’s fields, then submits the form</li>
+                  <li>Browser generates a request to the server, which receives the request and processes it </li>
+                  <li>Server generates and sends a response containing the exact page that the browser will render </li>
+                  <li>Browser loads the new page and temporarily makes the browser window blank </li>
+                  <li>Client waits for the server to respond and reloads the entire page with the data from the response </li>
+               </ul>
+               <h2> Ajax Web Applications </h2>
+               <p>In an Ajax application, when the user interacts with a page </p>
+               <ul>
+                  <li>Client creates an XMLHttpRequest object to manage a request </li>
+                  <li>XMLHttpRequest object sends the request to and awaits the response from the server</li>
+                  <li> Requests are asynchronous, allowing the user to continue interacting with the application while the server processes the request concurrently</li>
+                  <li>When the server responds, the XMLHttpRequest object that issued the request invokes a callback function, which typically uses partial page updates to display the returned data in the existing web page without reloading the entire page</li>
+               </ul>
+               <hr>
+            </div>
+         </div>
+         <div class="heading">
+            <p class= "caption">This is the end of the tutorial, now try the quiz.</p>
+            <a href="quiz3.html" class="submitbutton"> Quiz </a>
+         </div>
+      </div>
+   </body>
+</html>

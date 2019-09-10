@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="resume.xsl" type="text/xsl"?>
+<!-- Resume in XML form -->
+<resume>
+	<header>
+		<name>Shalmi Patel</name>
+		<address>
+			<street>16 cree dr</street>
+			<city>Ajax</city>
+			<province>Ontario</province>
+			<country>Canada</country>
+			<postalcode>L1Z 2C4</postalcode>
+		</address>
+		<contact>
+			<phone>123 456 7890</phone>
+			<email>patels19@mcmaster.ca</email>
+		</contact>
+	</header>
+
+	<body>
+		<section>
+			<title>Education</title>
+			<institution>McMaster University</institution>
+			<program>Software Engineering</program>
+		</section>
+		<section>
+			<title>Skills</title>
+			<point>Java, Python, LaTex, Git, SQL, HTML,C#, XMAL, GO</point>
+			<point>Windows, Unix</point>
+			<point>IDEs: Visual Studios, Android Studio, and Eclipse</point>
+			<point>Control Systems: Perforce, Team Foundation Server, GitHub</point>
+			<point>JIRA, Jenkins, Splunk</point>
+			<point>MATLAB</point>
+			<point>Adobe Photoshop, Adobe Premiere, Microsoft Word, Microsoft Excel, Microsoft PowerPoint</point>
+		</section>
+
+		<section>
+			<title>Experience</title>
+			<employer>
+				<company>Telus</company>
+				<addr>Scarborough, ON</addr>
+				<role>Application Developer Intern</role>
+				<time>May 2018 - Dec 2018</time>
+				<experience>
+					<point>Worked on the back-end Java development for Telus’ Offer Manager application which allows the business team to better manage market offers and deals in an agile environment</point>
+					<point>nsible for improving the Reporting functionality and accuracy within the application by incorporating relevant formation into the Report</point>
+					<point>Enhanced the user experience through better design layout which is outlined by the stakeholders</point>
+					<point>Modified the report content by using complex SQL queries</point> 
+					<point>Assisted with the monthly reporting using Splunk and various other applications</point>
+				</experience>
+			</employer>
+			<employer>
+				<company>CIBC</company>
+				<addr>Toronto, ON</addr>
+				<role>Application Developer Intern</role>
+				<time>May 2016 - Aug 2016</time>
+				<experience>
+					<point>Wrote in C++ to develop/refactor GUI elements of an existing Substation configurator and data collection program tool</point>
+					<point>Practice in Test Driven Development: unit tests, mock objects, etc</point>
+					<point>Formal presentations of completed work to internal company members</point>
+					<point>Use of Lync Skype to collaborate with co-workers out of the Edmonton office</point>
+					<point>Organization skills with Team Foundation Server to keep track of tasks for a sprint as well as daily, bi-weekly, and monthly Scrum meetings</point>
+				</experience>
+			</employer>
+		</section>
+		<section>
+			<title>Project</title>
+				<project>
+					<name>IDENTIF.AI</name>
+					<company>McMaster University</company>
+					<date>Winter 2018</date>
+					<note>Worked in a team of four to develop an application to identify television and movie celebrities</note>
+					<note>User inputs a picture, an audio clip, and/or a small description into the application for a result from multiple APIs</note>
+				</project>
+		</section>
+	</body>
+</resume>

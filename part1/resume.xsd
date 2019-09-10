@@ -1,0 +1,80 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resume">
+    <xs:annotation>
+      <xs:documentation>Resume in XML form</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:string" name="province"/>
+                    <xs:element type="xs:string" name="country"/>
+                    <xs:element type="xs:string" name="postalcode"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contact">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="phone"/>
+                    <xs:element type="xs:string" name="email"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="body">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="section" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="title"/>
+                    <xs:element type="xs:string" name="institution" minOccurs="0"/>
+                    <xs:element type="xs:string" name="program" minOccurs="0"/>
+                    <xs:element type="xs:string" name="point" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element name="employer" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="company"/>
+                          <xs:element type="xs:string" name="addr"/>
+                          <xs:element type="xs:string" name="role"/>
+                          <xs:element type="xs:string" name="time"/>
+                          <xs:element name="experience">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="point" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="project" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="company"/>
+                          <xs:element type="xs:string" name="date"/>
+                          <xs:element type="xs:string" name="note" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Slideshow </title>
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:900">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+</head>
+
+<body> 
+	<div id="page" class="banner">
+		<ul>
+		  <li><a href="../tma1.html" >Assingment</a></li>
+		  <li><a href="../part1/resume.xml" >Part 1</a></li>
+		  <li class="dropdown">
+			<a href="../part2/index.html" class="dropbtn" >Part 2</a>
+			<div class="dropdown-content">
+			  <a href="../part2/unit1.html">Unit 1</a>
+			  <a href="../part2/unit2.html">Unit 2</a>
+			  <a href="../part2/unit3.html">Unit 3</a>
+			</div>
+		  </li>
+		  <li><a href="index.html" id = "active">Part 3</a></li>
+		  <li class="dropdown">
+			<a href="../part4/index.html" class="dropbtn">Part 4</a>
+			<div class="dropdown-content">
+			  <a href="../part4/measurementConverter.html">Measurement Converter</a>
+			  <a href="../part4/mortgageCalc.html">Mortgage Calculator</a>
+			  <a href="../part4/tempCalc.html">Temperature Calculator</a>
+			</div>
+		  </li>
+		</ul>
+	</div>
+
+	<div class="heading">
+		<h1 id="title"> Slideshow </h1>
+		<p id="caption"> Welcome to my slideshow.</p>
+		<p id="caption"> all pictures were taken from a free stock website: https://unsplash.com/search/photos/india</p>
+		<hr width="60%">
+        <button class="submitbutton" id="playStop" value="Play" style='display:inline'>Play</button>
+        <button class= "submitbutton" id="shuffle" value="Sequential" style='display:inline'>Sequential</button>
+        <button class="submitbutton" id="prevArrow" value="Forward" style='display:inline'>&#10094;</button>
+        <button class="submitbutton" id="nextArrow" value="back" style='display:inline'>&#10095;</button>
+       
+        <select class ="submitbutton" id="effect" value="none" style='display:inline'>
+			<option value="none">None</option>
+			<option value="fade">Fade</option>
+		</select>
+		<br><br>
+		<p id="pIndex" style='display:inline'>Photo 1</p>
+		<p style='display:inline'> || </p>
+		<p id= "pCaption" style='display:inline'>Limbdi</p>
+    </div>
+
+	<div class = "slideshow">
+		<canvas id="slideshow" width="480" height="640"></canvas>
+	</div>
+		<script src="slideshow.js" type="text/javascript"></script>
+</body>
+</html>
